@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Destiny_2_Atheons__Oracles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T3k-0L-piI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="E3l-vB-piL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0i-pk-Mbk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oWt-86-rs1">
+                                                <rect key="frame" x="120" y="0.0" width="174" height="213"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGR-SA-N3C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174" height="213"/>
+                                                        <state key="normal" title="backMid" image="oracle"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="oWt-86-rs1" firstAttribute="top" secondItem="m0i-pk-Mbk" secondAttribute="top" id="2Nc-Tg-UAY"/>
+                                            <constraint firstAttribute="bottom" secondItem="oWt-86-rs1" secondAttribute="bottom" id="8ql-7Q-6Qy"/>
+                                            <constraint firstAttribute="trailing" secondItem="oWt-86-rs1" secondAttribute="trailing" constant="120" id="GL9-Mu-kg5"/>
+                                            <constraint firstItem="oWt-86-rs1" firstAttribute="centerY" secondItem="m0i-pk-Mbk" secondAttribute="centerY" id="Y0k-RW-XgE"/>
+                                            <constraint firstItem="oWt-86-rs1" firstAttribute="centerX" secondItem="m0i-pk-Mbk" secondAttribute="centerX" id="Ytn-86-Czb"/>
+                                            <constraint firstItem="oWt-86-rs1" firstAttribute="leading" secondItem="m0i-pk-Mbk" secondAttribute="leading" constant="120" id="ZIY-db-Ifn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-Er-IAe">
+                                        <rect key="frame" x="0.0" y="213" width="414" height="213"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="mvW-NI-Z13">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-sS-XdJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="213"/>
+                                                        <state key="normal" title="backLeft" image="oracle"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="io4-cG-Ifd">
+                                                        <rect key="frame" x="242" y="0.0" width="172" height="213"/>
+                                                        <state key="normal" title="backRight" image="oracle"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mvW-NI-Z13" firstAttribute="leading" secondItem="H1W-Er-IAe" secondAttribute="leading" id="4cm-Pz-LPF"/>
+                                            <constraint firstItem="mvW-NI-Z13" firstAttribute="top" secondItem="H1W-Er-IAe" secondAttribute="top" id="AQI-Te-UNf"/>
+                                            <constraint firstAttribute="bottom" secondItem="mvW-NI-Z13" secondAttribute="bottom" id="Djm-z3-nCb"/>
+                                            <constraint firstAttribute="trailing" secondItem="mvW-NI-Z13" secondAttribute="trailing" id="g9M-KP-waV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5U-6h-5bO">
+                                        <rect key="frame" x="0.0" y="426" width="414" height="213"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-78-7o1">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ce-77-q6h">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="213"/>
+                                                        <state key="normal" title="frontLeft" image="oracle"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIw-kd-Zro">
+                                                        <rect key="frame" x="242" y="0.0" width="172" height="213"/>
+                                                        <state key="normal" title="frontMid" image="oracle"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2BP-78-7o1" firstAttribute="top" secondItem="h5U-6h-5bO" secondAttribute="top" id="2jh-WZ-WNh"/>
+                                            <constraint firstAttribute="bottom" secondItem="2BP-78-7o1" secondAttribute="bottom" id="FZ7-KL-Zfa"/>
+                                            <constraint firstAttribute="trailing" secondItem="2BP-78-7o1" secondAttribute="trailing" id="OAY-iP-bg2"/>
+                                            <constraint firstItem="2BP-78-7o1" firstAttribute="leading" secondItem="h5U-6h-5bO" secondAttribute="leading" id="eLo-KM-MTd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gig-1e-hJ6">
+                                        <rect key="frame" x="0.0" y="639" width="414" height="213"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iSX-Dc-A1G">
+                                                <rect key="frame" x="120" y="0.0" width="174" height="213"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHS-0G-7GJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174" height="213"/>
+                                                        <state key="normal" title="Button" image="oracle"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iSX-Dc-A1G" firstAttribute="leading" secondItem="gig-1e-hJ6" secondAttribute="leading" constant="120" id="DCO-4f-hL2"/>
+                                            <constraint firstAttribute="bottom" secondItem="iSX-Dc-A1G" secondAttribute="bottom" id="fte-lM-hQ3"/>
+                                            <constraint firstAttribute="trailing" secondItem="iSX-Dc-A1G" secondAttribute="trailing" constant="120" id="m3z-p2-wKY"/>
+                                            <constraint firstItem="iSX-Dc-A1G" firstAttribute="top" secondItem="gig-1e-hJ6" secondAttribute="top" id="yUy-h6-dgv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T3k-0L-piI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9F1-mI-o5W"/>
+                            <constraint firstAttribute="trailing" secondItem="E3l-vB-piL" secondAttribute="trailing" id="BAr-W8-pau"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T3k-0L-piI" secondAttribute="trailing" id="DcT-TS-EPZ"/>
+                            <constraint firstItem="T3k-0L-piI" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="IcF-Ss-I06"/>
+                            <constraint firstItem="T3k-0L-piI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MBo-cI-RsF"/>
+                            <constraint firstItem="E3l-vB-piL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RYA-tr-RCC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T3k-0L-piI" secondAttribute="bottom" id="Ro5-OQ-DdZ"/>
+                            <constraint firstItem="E3l-vB-piL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="huz-Vi-ntv"/>
+                            <constraint firstAttribute="bottom" secondItem="E3l-vB-piL" secondAttribute="bottom" id="yHB-7K-ROb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="400" height="266.66665649414062"/>
+        <image name="oracle" width="551" height="709"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
